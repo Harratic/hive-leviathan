@@ -24,7 +24,7 @@ Things needed to program:
     a dynamic interface of pull down menus in the app that change based on the
     chosen result of the previous menu.
 
-      App Structure:    
+  App Structure:    
 
         4 pull down menus
 
