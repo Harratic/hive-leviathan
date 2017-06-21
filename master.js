@@ -107,7 +107,7 @@ console.log(numofHits(),"hits")
 	const numofWounds = (wounds) =>{
 		const roll6 = () => Math.ceil(Math.random()*6)
 	////////////////////////////////////////////////////////////
-		const rolls = [...Array(attacks)]
+		const rolls = [...Array(num)]  //<<<<error here
 		console.log(rolls,'wound array')
 		const results = rolls.map(roll6)
 		return (results.filter(num => num >= woundMath()).length)
@@ -122,14 +122,18 @@ console.log(numofHits(),"hits")
 		const armorCheck = (wounds) =>{
 		const guardD = guardsman[3];
 		const roll6 = () => Math.ceil(Math.random()*6)
-		const rolls = [...Array(attacks)]
+		const rolls = [...Array(wounds)]
 		const results = rolls.map(roll6)
 		//console.log('num ', num);
 		//console.log('results ', results)
 		return (results.filter(num => num < guardD))
 	}
 	console.log(armorCheck(),"failed saves")
-	return armorCheck(numofWounds(numofHits()))
+
+
+const attack = (num) =>{
+	return armorCheck(numofWounds(numofHits(num)))
+}
 
 
 console.log(attack(50))
