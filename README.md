@@ -28,7 +28,7 @@ Things needed to program:
 
         4 pull down menus
 
-          Menu 1: a list of different armies
+            Menu 1: a list of different armies
             Menu 2: a list of unit in the chosen army
             Menu 3: a list of weapons available to that unit
             Menu 4: a list of possible special rules or re-rolls
@@ -44,4 +44,5 @@ Foreseen complications:
     weapons that do multiple points of damage to a single model, but not the unit as a whole
     weapons that do variable amounts of damage (1d6 or 1d3)
     melta weapons roll 2d6 and choose the higher one, discard the lower for damage.
-    invulnirable saves instead of armor saves and which to choose if both availible.
+    invulnerable saves instead of armor saves and which to choose if both available.
+    terrain bonus to armor save if applicable
